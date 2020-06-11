@@ -1,0 +1,52 @@
+define
+
+parental sub relation,
+  relates parent,
+  relates member;
+
+group sub relation,
+  relates affiliation,
+  relates member;
+
+country sub relation,
+  relates citizenship,
+  relates member;
+
+universe sub relation,
+  relates universe,
+  relates member;
+
+origin sub relation,
+  relates origin,
+  relates member;
+
+
+character sub entity,
+  plays parent,
+  plays member,
+  has name,
+  has alias,
+  has affiliation,
+  has gender,
+  has citizenship,
+  has origin,
+  has height,
+  has weight,
+  has universe;
+
+affiliation sub entity,
+  plays affiliation,
+  plays member,
+  has name
+
+citizenship sub entity,
+  plays citizenship,
+  plays member,
+
+universe sub entity,
+  plays universe,
+  plays member,
+
+origin sub entity,
+  plays origin,
+  plays member,
