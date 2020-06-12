@@ -1,2 +1,5 @@
 2020-06-10 15:12:47,430 [main] INFO  grakn.core.server.Grakn - Grakn started in 1.953 s
 2020-06-11 14:08:37,112 [main] INFO  grakn.core.server.Grakn - Grakn started in 1.724 s
+2020-06-12 14:26:07,886 [main] INFO  grakn.core.server.Grakn - Grakn started in 2.311 s
+2020-06-12 14:35:22,321 [transaction-listener] ERROR g.c.s.r.SessionService$TransactionListener - Runtime Exception in RPC TransactionListener: 
+grakn.core.kb.graql.exception.GraqlSemanticException: A concept `universe sub attribute, datatype string;` cannot have multiple properties `Base Type [ENTITY_TYPE] - Id [V4144]  - Label [entity] ` and `Base Type [RELATION_TYPE] - Id [V4152]  - Label [relation] ` for `sub`

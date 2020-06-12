@@ -4,7 +4,7 @@ parental sub relation,
   relates parent,
   relates member;
 
-group sub relation,
+affiliation sub relation,
   relates affiliation,
   relates member;
 
@@ -37,16 +37,50 @@ character sub entity,
 affiliation sub entity,
   plays affiliation,
   plays member,
-  has name
+  has name;
 
 citizenship sub entity,
   plays citizenship,
   plays member,
+  has name;
 
 universe sub entity,
   plays universe,
   plays member,
+  has name;
 
 origin sub entity,
   plays origin,
   plays member,
+  has name;
+
+name sub attribute,
+  datatype string;
+alias sub attribute,
+  datatype string;
+citizenship sub attribute,
+  datatype string;
+biological_mother sub attribute,
+  datatype string;
+biological_father sub attribute,
+  datatype string;
+affiliation sub attribute,
+  datatype string;
+origin sub attribute,
+  datatype string;
+height sub attribute,
+  datatype string;
+weight sub attribute,
+  datatype string;
+gender sub attribute,
+  datatype string;
+universe sub attribute,
+  datatype string;
+
+  currently has error message:
+  INVALID_ARGUMENT: GraqlSemanticException-A concept `universe sub attribute, 
+  datatype string;` cannot have multiple properties `Base Type [ENTITY_TYPE] - Id [V4144]
+    - Label [entity] ` and `Base Type [RELATION_TYPE] - Id [V4152]  - Label [relation]
+     ` for `sub`. Please check server logs for the stack trace.
+
+     check https://dev.grakn.ai/docs/schema/concepts for fix
